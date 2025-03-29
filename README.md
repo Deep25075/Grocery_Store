@@ -25,7 +25,7 @@ def add_to_cart():
 
 def view_cart():
     if not cart:
-        print("\n🛒 Your Cart is Empty!")
+        print("\nYour Cart is Empty!")
         return
 
     print("\nYour Cart:")
@@ -41,7 +41,7 @@ def checkout():
     if cart:
         confirm = input("\nProceed to Checkout? (yes/no): ").strip().lower()
         if confirm == "yes":
-            print("\n🎉 Thank You for Shopping! Your Order is Placed.")
+            print("\nThank You for Shopping! Your Order is Placed.")
             cart.clear()
         else:
             print("\nCheckout Cancelled.")
